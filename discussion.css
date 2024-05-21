@@ -1,0 +1,50 @@
+body{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr 1fr 1fr 6fr 1fr;
+    grid-template-areas:
+    'a a a'
+    'b c d'
+    'e e e'
+    'f f f'
+    'g g g';
+}
+footer{
+    grid-area:g;
+    text-align:center;
+    font-size:10px;
+    color:rgb(193, 129, 69);/*폰트 색은 color로 바꿈*/
+}
+header{
+    grid-area: a;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(164, 81, 215);
+    align-items: center;/*요소들을 구간내에서 수직에 중앙*/
+    
+}
+.one{
+    grid-area:b;
+    text-align:center;
+    font-family:Roboto;
+    font-weight:900;
+    
+}
+.two{
+    grid-area:c;
+    text-align: center;
+    font-family:Roboto;
+    font-weight:900;
+}
+.three{
+    grid-area:d;
+    text-align: center;
+    font-family:Roboto;
+    font-weight:900;
+}
+main{
+    display:contents;
+}
+
+
+
